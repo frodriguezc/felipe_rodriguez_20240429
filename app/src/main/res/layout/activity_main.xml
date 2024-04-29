@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_horizontal|fill_vertical"
+        android:layout_marginTop="100dp"
+        android:text="FUTBOL!!" />
+
+    <ImageView
+        android:id="@+id/ball"
+        android:layout_width="150pt"
+        android:layout_height="150pt"
+        android:layout_gravity="center_horizontal|center_vertical"
+        android:layout_margin="10dp"
+        android:baselineAlignBottom="false"
+        android:padding="50dp" />
+
+    <Button
+        android:id="@+id/btnNavigateToPlayers"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ver jugadores"
+        android:layout_marginTop="20dp"/>
+
+
+</LinearLayout>
