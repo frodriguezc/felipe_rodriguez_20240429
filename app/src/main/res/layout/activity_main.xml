@@ -5,8 +5,13 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     android:id="@+id/main"
     android:layout_width="match_parent"
-    android:layout_height="match_parent"
-    android:orientation="vertical">
+    android:layout_height="wrap_content"
+    android:layout_centerInParent="false"
+    android:layout_centerHorizontal="false"
+    android:layout_centerVertical="false"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:textAlignment="center">
 
     <TextView
         android:layout_width="wrap_content"
@@ -28,8 +33,9 @@
         android:id="@+id/btnNavigateToPlayers"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:text="Ver jugadores"
-        android:layout_marginTop="20dp"/>
+        android:layout_marginTop="20dp"
+        android:gravity="fill"
+        android:text="Ver jugadores" />
 
 
 </LinearLayout>

@@ -1,11 +1,13 @@
 import android.content.Context
 import android.content.Intent
 import android.net.Uri
+import android.util.Log
 import android.view.LayoutInflater
 import android.view.View
 import android.view.ViewGroup
 import android.widget.ImageView
 import android.widget.TextView
+import androidx.core.net.toUri
 import androidx.recyclerview.widget.RecyclerView
 import tech.carcher.felipe_rodriguez_20240429.Player
 import tech.carcher.felipe_rodriguez_20240429.R
@@ -35,7 +37,9 @@ class PlayersAdapter(
         holder.teamView.text = player.team
 
         holder.playVideoButton.setOnClickListener {
-            val videoResourceUri = Uri.parse("android.resource://${context.packageName}/raw/${player.videoUrl}")
+//            val videoResourceUri = Uri.parse(player.videoUrl)
+            val videoResourceUri = Uri.parse("android.resource://${context.packageName}/res/raw/${player.name.lowercase()}")
+            Log.d("URI", "Uri: $videoResourceUri")
             val intent = Intent(Intent.ACTION_VIEW).apply {
                 setDataAndType(videoResourceUri, "video/mp4")
                 flags = Intent.FLAG_ACTIVITY_NEW_TASK

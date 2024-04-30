@@ -18,10 +18,10 @@ class PlayerListActivity : AppCompatActivity() {
 
     private fun listOfPlayers(): List<Player> {
         return listOf(
-            Player("Diego", "Boca", R.drawable.diego, R.raw.diego),
-            Player("Pele", "Barcelona", R.drawable.pele, R.raw.pele),
-            Player("Condor", "Boca", R.drawable.condor, R.raw.condor),
-            Player("Roberto Carlos", "Barcelona", R.drawable.roberto, R.raw.roberto),
+            Player("Diego", "Boca", R.drawable.diego, R.raw.diego.toString()),
+            Player("Pele", "Barcelona", R.drawable.pele, R.raw.pele.toString()),
+            Player("Condor", "Boca", R.drawable.condor, R.raw.condor.toString()),
+            Player("Roberto Carlos", "Barcelona", R.drawable.roberto, R.raw.roberto.toString()),
         )
     }
 }

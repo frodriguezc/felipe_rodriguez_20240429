@@ -4,5 +4,5 @@ data class Player(
     val name: String,
     val team: String,
     val photoUrl: Int,
-    val videoUrl: Int
+    val videoUrl: String
 )
